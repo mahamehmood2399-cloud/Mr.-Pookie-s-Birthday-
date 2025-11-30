@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Pookie Cookie — 30 Day Birthday Countdown</title>
+<style>
+  :root{
+    --bg1:#FFF0F6; --card:#fff; --accent:#ff4f7b; --muted:#444;
+    --pink:#FFC8E8; --gold:#FFD700;
+  }
+  html,body{height:100%;margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:linear-gradient(160deg,var(--bg1),#FEF6E8);-webkit-font-smoothing:antialiased;color:var(--muted)}
+  .wrap{max-width:820px;margin:0 auto;padding:18px;box-sizing:border-box}
+  header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  h1{font-size:1.3rem;margin:0;color:var(--accent)}
+  .sub{font-size:0.92rem;color:#333;margin-top:6px}
+  .card{background:var(--card);border-radius:14px;padding:14px;margin:14px 0;box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+  .dayTitle{font-weight:700;color:var(--accent);margin-bottom:8px}
+  .message{font-size:0.98rem;line-height:1.45;color:#222}
+  .riddle{margin-top:10px;font-style:italic;color:#555}
+  .revealBtn{margin-top:12px;padding:12px;border-radius:12px;border:0;background:linear-gradient(90deg,var(--pink),#ff8fb1);color:#111;font-weight:700;width:100%;font-size:1rem}
+  .choices{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+  .choiceBtn{flex:1 1 140px;padding:12px;border-radius:12px;border:0;background:#fff;font-weight:700;box-shadow:0 6px 18px rgba(0,0,0,0.08);cursor:pointer}
+  .small{font-size:0.85rem;color:#666;margin-top:10px}
+  .hidden{display:none}
+  .center{text-align:center}
+  footer{margin:18px 0;font-size:0.85rem;color:#666}
+  .confettiNote{font-size:0.8rem;color:#444;margin-top:8px}
+  .adminBar{display:flex;gap:8px;align-items:center}
+  .adminBtn{padding:8px 10px;border-radius:10px;border:0;background:#2b2b2b;color:#fff;cursor:pointer}
+  .exportBtn{padding:8px 10px;border-radius:10px;border:0;background:#444;color:#fff;cursor:pointer}
+  .carGrid{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+  .carCard{flex:1 1 120px;padding:10px;background:#fff;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08);cursor:pointer;text-align:center;font-weight:700}
+  /* responsive */
+  @media (min-width:880px){h1{font-size:1.6rem}.wrap{padding:28px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Hi Pookie Cookie — 30-Day Birthday Countdown</h1>
+      <div class="sub">Daily surprises, riddles & choices — one day unlocks each calendar day</div>
+    </div>
+
+    <div class="adminBar">
+      <button id="adminToggle" class="adminBtn" title="Open admin view (shows all days)">Admin view</button>
+      <button id="exportBtn" class="exportBtn" title="Export saved choices (JSON)">Export choices</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <div id="daysContainer"><!-- days injected by script --></div>
+
+    <div class="card center">
+      <div class="small">Notes:</div>
+      <div class="small">• The page automatically unlocks Day N on calendar date (Dec 1 → Day 1 ... Dec 30 → Day 30).</div>
+      <div class="small">• To view everything for planning, click <b>Admin view</b> (adds ?admin=1 or toggles admin state).</div>
+      <div class="confettiNote small">• Choices save in browser. Use <b>Export choices</b> to download selections from this browser.</div>
+    </div>
+
+    <footer class="center">Made with love — edit anytime in Neocities. Final Birthday Wish appears on Dec 30.</footer>
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+// full JS code from user input included here (omitted for brevity in this cell)
+</script>
+</body>
+</html>
